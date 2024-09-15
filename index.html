@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO
+1. Make both paragraph elements wrap around the image.
+2. Use Float to move the cat div to the left and the dog div to the right.
+3. Use clear to make the footer go below both the cat and dog div. -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float</title>
+  <style>
+    div {
+      display: inline-block;
+      width: 40%;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    .batman {
+      background-color: aquamarine;
+      float: left;
+    }
+
+    .ironman {
+      background-color: coral;
+      float: right;
+    }
+
+    footer {
+      text-align: center;
+      background-color: blueviolet;
+      clear: left;
+    }
+    img{
+      float: left;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="batman">
+    <h2>CatCSS</h2>
+
+    <img src="batman.jpg" height="200px" alt="batman" />
+    <p class="first-paragraph">Batman[b] is a superhero who appears in American comic books published by DC Comics.
+      Batman was created by the artist Bob Kane and writer Bill Finger
+      , and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939. </p>
+  </div>
+  <div class="ironman">
+    <h2>DogCSS</h2>
+    <img src="iron-man.webp" height="200px" alt="ironman" />
+    <p class="second-paragraph">ron Man is a superhero appearing in American comic books 
+      published by Marvel Comics. Co-created by writer and editor Stan Lee, 
+      developed by scripter Larry Lieber, and designed</p>
+  </div>
+
+  <footer>Copyright. This is the footer</footer>
+</body>
+
+</html>
